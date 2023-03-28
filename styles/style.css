@@ -1,13 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: "iranyekanwebregular", Arial, Helvetica, sans-serif;
 }
 
-header{
+header {
     display: flex;
     justify-content:  space-between;
     align-items: center;
@@ -21,27 +21,27 @@ header{
     transition: all 0.3s ease;
 }
 
-.logo{
+.logo {
     margin: 11px 28px;
 }
 
-.header-ul{
+.header-ul {
     display: flex;
     list-style: none;
 }
 
-.header-ul li{
+.header-ul li {
     font-size: 14px;
     margin: 0 15px ;
 }
 
-.header-ul li a{
+.header-ul li a {
     cursor: pointer;
     text-decoration: none;
     color: #303030;
 }
 
-.header-ul > li:last-child a{
+.header-ul > li:last-child a {
      color: #28457B;
      background-color:  rgba(232, 239, 254, 0.6);
      border-radius: 20PX;
@@ -50,25 +50,25 @@ header{
      font-family:  YekanBakhBold;
 }
 
-.header-ul > li:last-child a:hover{
+.header-ul > li:last-child a:hover {
     background-color:  #fbf6d9;
 }
 
-.more-menu{
+.more-menu {
     display: flex;
 }
 
-.more-menu img{
+.more-menu img {
     width: 8px;
     margin-right: 8px;
 }
 
-.hamburger-icon{
+.hamburger-icon {
     width: 27px;
     display: none;
 }
 
-.hamburger-menu{
+.hamburger-menu {
     position: fixed;
     top: 0;
     right: 0;
@@ -79,33 +79,33 @@ header{
     transform:  translateY(-100%);
 }
 
-.cross-icon{
+.cross-icon {
     width: 100%;
     text-align: left;
     padding: 25px 0;
 }
 
-.cross-icon img{
+.cross-icon img {
     width: 20px;
     margin-left: 30px;
 }
 
-.humberger-menu-items{
+.humberger-menu-items {
     padding: 10px 30px;
 }
 
-.humberger-menu-items ul{
+.humberger-menu-items ul {
     list-style: none ;
 }
 
-.humberger-menu-items a{
+.humberger-menu-items a {
     text-decoration: none;
     color: black;
     display: inline-block;
     padding: 3px 0;
 }
 
-.humberger-menu-items div{
+.humberger-menu-items div {
      height: 1px;
      background-color: #dfe1e4;
      width: 90%;
@@ -119,22 +119,94 @@ header{
      align-items: center ;
 }
 
-.more-item img{
+.more-item img {
     width: 15px;
     margin-right: 5px;
 }
 
-.more-item a{
+.more-item a {
     text-decoration: none;
     color: #28457b;
     font-size: 0.85rem;
 }
 
-.show-hamburger-menu{
+.show-hamburger-menu {
     animation: fadeInDown 0.25s forwards;
 }
 
-@keyframes fadeInDown{
+#show-more-menu {
+    position: relative;
+}
+
+#show-more-menu ul { 
+    position: absolute;
+    top: 0;
+    left: -35px;
+    background-color: #fff;
+    border-top: 5px solid #f8e88b;
+    box-shadow: 0 20px 40px 0 rgba(36,39,51,.15);
+    border-radius: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 23px;
+    list-style: none;
+    width: 123px;
+    display: none;
+}
+
+#show-more-menu li {
+    margin: 0;
+    padding:  10px 20px;
+    font-size: 0.8rem;
+    color:  black;
+}
+
+#show-product-menu {
+    position: relative;
+}
+
+.product-menu {
+    position: absolute;
+    top: 0;
+    left: -135px;
+    background-color: #fff;
+    display: none;
+    justify-content:  flex-start;
+    width: 421px;
+    border-top: 5px solid #f8e88b;
+    box-shadow:  0 20px 40px 0 rgba(36,39,51,.15);
+    border-radius: 12px;
+    padding-top: 5px;
+    margin-top: 23px;
+}
+
+.product-menu a p:first-child {
+    color: black;
+    font-size:  0.95rem;
+}
+
+.product-menu a p:last-child{
+    color: #000;
+    font-size: 0.7rem ;
+    margin-top: 10px;
+}
+
+.product-menu a {
+     margin: 10px;
+     display: block;
+     padding: 10px;
+     border-radius: 5px;
+}
+
+.product-menu a:hover { 
+    background-color: rgba(232, 239, 254, 0.6); 
+}
+
+#show-more-menu li:hover {
+     background-color: rgba(232, 239, 254, 0.6);
+}
+
+@keyframes fadeInDown {
      0%{
         opacity: 0;
         transform: translateY(-100%);
@@ -145,20 +217,29 @@ header{
      }
 }
 
+@keyframes showUp {
+     0%{
+        opacity: 0;
+     }
+     100%{
+        opacity: 1;
+     }
+}
 
-@media (max-width: 1200px){
+
+@media (max-width: 1200px) {
      header{
         width: 940px;
      }
 }
 
-@media (max-width: 990px){
+@media (max-width: 990px) {
     header{
         width: auto;
         padding: 20px 60px ;
     }
     
-    .header-ul li:last-child{
+    .header-ul li:last-child {
         display: none;
     }
 
@@ -166,21 +247,21 @@ header{
         margin: 0;
     }
 
-    .header-ul li{
+    .header-ul li {
         margin: 0 10px;
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .header-ul{
         display: none ;
     }
     
-    .hamburger-icon{
+    .hamburger-icon {
         display: block;
     }
 
-    header{
+     {
         width: auto;
         padding: 10px;
     }
