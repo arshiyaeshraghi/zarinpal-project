@@ -185,7 +185,7 @@ header {
     font-size:  0.95rem;
 }
 
-.product-menu a p:last-child{
+.product-menu a p:last-child {
     color: #000;
     font-size: 0.7rem ;
     margin-top: 10px;
@@ -200,6 +200,97 @@ header {
 
 .product-menu a:hover { 
     background-color: rgba(232, 239, 254, 0.6); 
+}
+ 
+.banner {
+    width: 1050px;
+    padding: 124px 60px 80px;
+    background-image: linear-gradient(135deg, #21254e, #2b4a83);
+    border-radius: 20px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.banner-text h3 {
+    font-family: YekanBakhHeavy;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.banner-text p {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 25px 0;
+    line-height: 2.5rem;
+}
+
+.banner-image img{
+    width: 500px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.banner-image .wave{
+    position: absolute;
+    top: 100px;
+    left: -35px;
+    width: 846px;
+    height: 509px;
+    z-index: 1;
+}
+
+.banner-button {
+    margin-top: 60px; 
+} 
+
+.register {
+    font-size: 1rem;
+    font-family: YekanBakhBold;
+    color: #000;
+    background-color: #ffd900;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.login {
+    font-size: 1rem;
+    font-family: YekanBakhBold;
+    color: #fff;
+    background-color: #435a8a;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.go-down {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 58px;
+}
+
+.go-down div {
+    background-image: url('../images/arrowbottom.svg');
+    width: 164px;
+    height: 78px;
+}
+
+.go-down img {
+     width: 20px;
+     position: relative;
+     top: -60px;
 }
 
 #show-more-menu li:hover {
@@ -261,7 +352,7 @@ header {
         display: block;
     }
 
-     {
+    header {
         width: auto;
         padding: 10px;
     }
