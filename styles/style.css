@@ -382,6 +382,11 @@ header {
     padding-top: 5px;
  }
 
+ .online-payment .se-img2{
+    width: 596px;
+    height: 400px;
+ }
+
 @keyframes fadeInDown {
      0%{
         opacity: 0;
@@ -425,6 +430,22 @@ header {
         left: -65px;
         z-index: 1;
      }
+     .online-payment{
+        width: 940px;
+     }
+     .online-payment .se-img1{
+        width: 350px;
+        margin-left: 60px;
+     }
+     .online-payment .se-img2{
+        display: flex;
+        width: 596px;
+        height: 400px;
+     }
+     .online-payment .se-img3{
+        width: 500px;
+        margin-left: 50px;
+     }
 }
 
 @media (max-width: 990px) {
@@ -463,6 +484,25 @@ header {
     .banner-button{
         margin-top: 40px;
     }
+    .online-payment{
+        width: auto;
+        flex-direction: column;
+        align-items: center;  
+    }
+    .section-text{
+        width: 95%;
+    }
+    .online-payment .se-img1{
+        margin: -150px;
+     }
+     .online-payment .se-img3{
+        width: 420px;
+        margin-right: 215px;
+        margin-top: -90px;
+     }
+     .online-payment .se-text1{
+        margin-top: -80px;
+     }
 }
 
 @media (max-width: 768px) {
@@ -482,6 +522,15 @@ header {
         margin-left: 8px;
         margin-right: 8px;
     }
+    .section-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .online-payment img{
+        width: 460px;
+        height: 48opx;
+    }
 }
 
 @media (max-width: 575px){
@@ -494,5 +543,15 @@ header {
     }
     .banner-text p{
         text-align: justify;
+    }
+    .online-payment .section-image{
+        display: none;
+    }
+    .section-text{
+        width: 80%;
+        padding: 0 10px;
+    }
+    .section-text h3{
+        font-size: 1.5rem;
     }
 }
